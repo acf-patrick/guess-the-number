@@ -1,48 +1,4 @@
 
-/*class Personnage{
-    constructor(nom = "", nbrVie = 0, arme = ""){
-        this.name = nom;
-        this.HP = nbrVie;
-        this.weapon = arme;
-        }
-    introduce(){
-        console.log('nom : ${this.name} \nnombre de vie : ${this.HP} \narme : ${this.weapon}');
-    }
-    toString(){
-        var ret = "nom : "+this.name+"\nnombre de vie : "+this.HP+"\narme : "+this.weapon;
-        return ret;
-    }
-};
-
-
-var perso = new Personnage("acf", 100, "raquette");
-perso.introduce();
-
-var perso2 = new Personnage("Hercule", 500, "Epée");
-perso2.introduce();
-
-var eleve = {
-    nom : "Jean",
-    note : [],
-    moyenne : function(){
-        if (!this.note.length)
-            return 0;
-        var sum = 0;
-        for (var i=0; i<this.note.length; ++i)
-            sum += this.note[i];
-        return sum/this.note.length;
-    },
-    present : function(){
-        console.log(this.nom + " present!");
-    }
-}
-
-var e = Object.create(eleve);
-e.note = [10, 17];
-e.present();
-console.log(e.moyenne());
-*/
-
 function randint(a, b) { 
     return Math.round((a>b)?randint(b, a):(a+Math.random()*(b-a))); 
 }
